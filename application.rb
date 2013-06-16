@@ -27,4 +27,5 @@ end
 Bundler.require(:default, SampleAppCrampAndRedis::Application.env)
 
 # Preload application classes
-Dir['./app/**/*.rb'].each {|f| require f}
+#Dir['./app/**/*.rb'].each {|f| require f}
+(Dir['./app/helpers/*.rb'] + Dir['./app/models/*.rb'] + Dir['./app/actions/*.rb']).each {|f| require f}

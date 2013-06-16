@@ -1,12 +1,28 @@
-source :rubygems
+source 'http://rubygems.org'
+
+# Rails Support Lib Classes
+gem 'activesupport'
+
+# Rails Internationalization
+gem 'i18n'
 
 gem 'cramp'
+
+# Ruby Redis Driver
+gem 'redis'
+
+# JSON support
+gem 'json'
 
 # Async webserver for running a cramp application
 gem 'thin'
 
 # Rack based routing
 gem 'http_router'
+
+
+# Collection of async-proof rack middlewares - https://github.com/rkh/async-rack.git
+gem 'async-rack'
 
 # Collection of async-proof rack middlewares - https://github.com/rkh/async-rack.git
 gem 'async-rack'
@@ -25,3 +41,4 @@ group :development do
   # Development gems
   # gem 'ruby-debug19'
 end
+

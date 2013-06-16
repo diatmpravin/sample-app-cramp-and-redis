@@ -1,4 +1,11 @@
 require './application'
+require 'redis'
+require 'open-uri'
+require 'rss'
+require 'json'
+require 'active_support/core_ext'
+
+
 SampleAppCrampAndRedis::Application.initialize!
 
 # Development middlewares
